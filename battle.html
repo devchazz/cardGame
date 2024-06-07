@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chazz card game</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Miguel 'Chazz' Antunes">
+    <link rel="stylesheet" href="./styles/layoutGame.css">
+    <link rel="stylesheet" href="./styles/endTurnButton.css">
+    <link rel="stylesheet" href="./styles/messageBoxContainer.css">
+
+    <script src="scripts/cardEffects.js"></script>
+    <script src="scripts/decks.js"></script>
+
+    <script src="scripts/gameControll.js"></script>
+    <script src="scripts/playerInputHandle.js"></script>
+    <script src="scripts/aiMethods.js"></script>
+
+    <script src="scripts/uiControl.js"></script>
+    <script src="scripts/showCardDetais.js"></script>
+    <script src="scripts/uiAnimations.js"></script>
+    <script src="scripts/gameGenericFunctions.js"></script>
+
+  </head>
+<body onload="gameControl.setupGame()" onclick="playerMethods.checkIfIsSummoning()" id="body">
+  <!-- SHOW CARD DESCRIPTION: -->
+  <div class="messageContainer" id="bigCardShowerCointainer" onclick="cardDetailsUi.closeCardDetail()">
+    <div class="messageBoxRow">
+      <div>
+        <img id="cardImageShowerBig"/>
+      </div>
+      <div id="nameAndDescriptionCardContainer">
+        <h3 id="cardShowerName"> Name of the card </h3>
+        <p id="cardShowerDescription">
+          This card makes this and that.
+        </p>
+        <p id="cardShowerType">
+          Atk: 0 | Def: 0
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINISH GAME: -->
+  <div class="messageContainer" id="permanenetMessageContainer">
+    <div class="messageBox">
+      <p id="permanentWarning"> Warning </p>
+      <a id="afterMatchOption1" href="./battle.html"> Play again </a>
+      <a id="afterMatchOption2" href="./index.html" class="endButton"> Go back to the menu </a>
+    </div>
+  </div>
+
+  <!-- GAME ITSELF: -->
+  <div id="endTurnContainer">
+    <button id="endTurnButton" onclick="gameControl.endTurn()"> End Turn </button>
+  </div>
+  <div id="enemyInterface" class="interface">
+    <div class="profilePic" id="enemyProfilePicContainer">
+      <img id="enemyProfilePic" src="./profilePics/evilGuy.png"/>
+    </div>
+    <div class="hand" id="enemyHand"></div>
+    <div class="deck" id="enemyDeck">
+      <div class="roundDarkText ">
+        <p id="enemyDeckCount">0</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="field">
+    <div class="fieldContainer">
+      <div class="lifePointsContainer">
+        <p id="enemyLifePoints">10</p>
+        <img src="./uiElements/atackTurnToken.png" class="turnShoweImg" id="enemyTurnShower"/>
+      </div> 
+      <div class="fieldBattle" id="enemyField">
+      </div>
+      <div class="discartPile" id="enemyDiscartPile">
+        <div class="roundDarkText">
+          <p id="enemyDiscartPileCount">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div><p id="turnInformationText">Your turn</p></div>
+
+    <div class="fieldContainer">
+      <div id="playerLifePointsContainer" class="lifePointsContainer">
+        <img src="./uiElements/defenseTurnToken.png" class="turnShoweImg" id="playerTurnShower"/>
+        <p id="playerLifePoints">10</p>
+      </div> 
+      <div class="fieldBattle" id="playerField">
+        
+      </div>
+      <div class="discartPile" id="playerDiscartPile">
+        <div class="roundDarkText">
+          <p id="playerDiscartPileCount">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="playerInterface" class="interface">
+    <div class="profilePic" id="playerProfilePicContainer">
+      <img id="playerProfilePic" src="./profilePics/jken.png"/>
+    </div>
+    <div class="hand" id="playerHand"></div>
+    <div class="deck" id="playerDeck">
+      <div class="roundDarkText">
+        <p id="playerDeckCount">0</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

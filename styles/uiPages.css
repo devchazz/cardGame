@@ -1,0 +1,93 @@
+/* Page config: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif, serif;
+  letter-spacing: 1px;
+  color: white;
+  min-height: 100%;
+}
+body {
+  min-width: 1280px;      
+  min-height: 720px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+  padding: 20px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+.headerLinks{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 5px;
+}
+
+#mainMenuNav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#menuOptions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#menuOptions a{
+  text-decoration: none;
+  transition: 200ms;
+  text-align: center;
+  font-size:2em;
+  color: white;
+  min-width: 300px;
+  padding: 5px;
+  margin: 10px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#menuOptions a:hover{
+  border: 2px solid red;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-right: 12%;
+  padding-left: 12%;
+
+  border-top: white 2px solid;
+  font-size: 1.3em;
+}

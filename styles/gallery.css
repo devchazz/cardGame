@@ -1,0 +1,96 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cardGalleryContainer{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cardContainer{
+  width: 45%;
+  min-height: 182px;
+  background-color: black;
+  border: white 3px solid;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardContainer img{
+  max-height: 120px;
+  margin-right: 10px;
+  flex-grow: 0;
+}
+
+.descriptionAndPointsContainer{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.cardContainer h3{
+  padding-bottom: 5px;
+}
+
+.cardDescription{
+  border-top: 1px solid white;
+  min-height: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pointsContainer{
+  border-top: 1px solid white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nameAndDescriptionCardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.messageBoxRow img{
+  border: 2px solid white;
+}
+
+.messageBoxRow h3{
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.messageBoxRow p{
+  font-size: 0.9em;
+}
+
+#cardShowerDescription{
+  text-align: justify;
+  max-width: 450px;
+  min-height: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#cardShowerType{
+  text-align: justify;
+  max-width: 450px;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

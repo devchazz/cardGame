@@ -1,0 +1,28 @@
+7 Cards per deck
+**** Set ideas: ****
+Animals: (are going to be common and used in many decks to fill spaces)
+  12 - 
+  3  - Spider          (3/3 call)
+  4  - Cursed Wolf     (4/2 call)
+  5  - Snake           (3/1 poison)
+Flowers: (grow slowly but become stronger with time)
+  0  - Fire Plant      ()
+  1  - Poison Plant    ()
+  2  - Plant of Life   ()
+  6  - The Big Tree    (S/P buffPlants)
+  22 - Flower Picker   (2/2 createPinkPlant) 
+  16 - 
+Nightmare: ()
+  10 -
+  11 -
+  13 -
+  14 - 
+  17 - 
+Robots: 8 - 15 - 23 - 24
+Soldiers: 9 
+
+**** Card value design: ****
+Common = 10
+Heal / Burn = 8
+Posion / Frost = 4
+Call = 6
